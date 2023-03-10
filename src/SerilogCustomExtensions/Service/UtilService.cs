@@ -40,4 +40,9 @@ public class UtilService : IUtilService
     {
         logger.LogError(message);
     }
+
+    public void SaveLogDebug(string message)
+    {
+        logger.LogDebug(message);
+    }
 }

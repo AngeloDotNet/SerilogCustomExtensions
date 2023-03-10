@@ -35,4 +35,10 @@ public interface IUtilService
     /// </summary>
     /// <param name="message"></param>
     void SaveLogError(string message);
+
+    /// <summary>
+    /// Saving logs of type debug
+    /// </summary>
+    /// <param name="message"></param>
+    void SaveLogDebug(string message);
 }
