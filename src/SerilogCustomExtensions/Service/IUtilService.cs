@@ -29,4 +29,10 @@ public interface IUtilService
     /// </summary>
     /// <param name="message"></param>
     void SaveLogCritical(string message);
+
+    /// <summary>
+    /// Saving logs of type error
+    /// </summary>
+    /// <param name="message"></param>
+    void SaveLogError(string message);
 }

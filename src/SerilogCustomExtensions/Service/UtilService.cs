@@ -35,4 +35,9 @@ public class UtilService : IUtilService
     {
         logger.LogCritical(message);
     }
+
+    public void SaveLogError(string message)
+    {
+        logger.LogError(message);
+    }
 }
