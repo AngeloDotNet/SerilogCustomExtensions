@@ -17,4 +17,10 @@ public interface IUtilService
     /// </summary>
     /// <param name="message"></param>
     void SaveLogInformation(string message);
+
+    /// <summary>
+    /// Saving logs of type warning
+    /// </summary>
+    /// <param name="message"></param>
+    void SaveLogWarning(string message);
 }

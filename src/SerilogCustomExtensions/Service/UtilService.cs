@@ -25,4 +25,9 @@ public class UtilService : IUtilService
     {
         logger.LogInformation(message);
     }
+
+    public void SaveLogWarning(string message)
+    {
+        logger.LogWarning(message);
+    }
 }
