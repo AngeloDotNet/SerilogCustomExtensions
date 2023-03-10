@@ -23,4 +23,10 @@ public interface IUtilService
     /// </summary>
     /// <param name="message"></param>
     void SaveLogWarning(string message);
+
+    /// <summary>
+    /// Saving logs of type critical
+    /// </summary>
+    /// <param name="message"></param>
+    void SaveLogCritical(string message);
 }

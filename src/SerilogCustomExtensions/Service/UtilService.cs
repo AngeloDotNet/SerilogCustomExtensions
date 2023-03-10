@@ -30,4 +30,9 @@ public class UtilService : IUtilService
     {
         logger.LogWarning(message);
     }
+
+    public void SaveLogCritical(string message)
+    {
+        logger.LogCritical(message);
+    }
 }
