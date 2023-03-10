@@ -6,14 +6,14 @@ name: Publish
 on:
   push:
     branches: [ main ]
-    paths: [ 'src/SerilogExtensions/**' ]
+    paths: [ 'src/SerilogCustomExtensions/**' ]
   workflow_dispatch:
 
 env:
   NET_VERSION: '6.x'
-  PROJECT_NAME: src/SerilogExtensions
+  PROJECT_NAME: src/SerilogCustomExtensions
   PROJECT_FILE: SerilogCustomExtensions.csproj
-  RELEASE_NAME: SerilogExtensions
+  RELEASE_NAME: SerilogCustomExtensions
 
 jobs:
   build:

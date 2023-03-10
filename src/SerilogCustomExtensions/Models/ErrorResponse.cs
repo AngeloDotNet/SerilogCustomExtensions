@@ -1,4 +1,4 @@
-﻿namespace SerilogExtensions.Models;
+﻿namespace SerilogCustomExtensions.Models;
 
 public class ErrorResponse
 {

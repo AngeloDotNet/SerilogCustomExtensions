@@ -1,4 +1,4 @@
-﻿namespace SerilogExtensions.Service;
+﻿namespace SerilogCustomExtensions.Service;
 
 public class UtilService : IUtilService
 {
