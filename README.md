@@ -1,1 +1,1 @@
-# SerilogExtensions
+# Serilog custom extensions
