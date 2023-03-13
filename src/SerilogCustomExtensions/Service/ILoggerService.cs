@@ -1,6 +1,6 @@
 ﻿namespace SerilogCustomExtensions.Service;
 
-public interface IUtilService
+public interface ILoggerService
 {
     /// <summary>
     /// Abstraction of the objectResult of the statusCode

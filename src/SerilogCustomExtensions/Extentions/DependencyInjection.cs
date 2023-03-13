@@ -4,8 +4,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddBusinessLayerServices(this IServiceCollection services)
     {
-        services
-            .AddTransient<IUtilService, UtilService>();
+        services.AddTransient<ILoggerService, LoggerService>();
 
         return services;
     }

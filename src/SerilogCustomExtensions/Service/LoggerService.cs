@@ -1,12 +1,12 @@
 ﻿namespace SerilogCustomExtensions.Service;
 
-public class UtilService : IUtilService
+public class LoggerService : ILoggerService
 {
     private List<string> errorList = new();
 
-    private readonly ILogger<UtilService> logger;
+    private readonly ILogger<LoggerService> logger;
 
-    public UtilService(ILogger<UtilService> logger)
+    public LoggerService(ILogger<LoggerService> logger)
     {
         this.logger = logger;
     }
