@@ -1,15 +1,15 @@
-﻿namespace SerilogCustomExtensions.Extentions;
+﻿namespace SerilogCustomExtensions.Extensions;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddBusinessLayerServices(this IServiceCollection services)
+    public static IServiceCollection AddSerilogServices(this IServiceCollection services)
     {
         services.AddTransient<ILoggerService, LoggerService>();
 
         return services;
     }
 
-    public static WebApplication AddApplicationServices(this WebApplication application)
+    public static WebApplication AddSerilogConfigureServices(this WebApplication application)
     {
         application.UseSerilogRequestLogging(options =>
         {
@@ -19,7 +19,7 @@ public static class DependencyInjection
         return application;
     }
 
-    public static WebApplicationBuilder AddOptionsBuilder(this WebApplicationBuilder builder)
+    public static WebApplicationBuilder AddSerilogOptionsBuilder(this WebApplicationBuilder builder)
     {
         builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
         {

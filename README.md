@@ -51,14 +51,14 @@ public IConfiguration Configuration { get; }
 	
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddBusinessLayerServices();
+    services.AddSerilogServices();
 }
 
 //OMISSIS
 
 public void Configure(WebApplication app)
 {
-    app.AddApplicationServices();
+    app.AddSerilogConfigureServices();
 }
 ```
 
@@ -70,7 +70,7 @@ public static void Main(string[] args)
     {
         WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-        builder.AddOptionsBuilder();
+        builder.AddSerilogOptionsBuilder();
 
         Startup startup = new(builder.Configuration);
 
